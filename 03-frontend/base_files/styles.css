@@ -1,0 +1,257 @@
+/* 
+  This is a SAMPLE File to get you started. Follow the instructions on the project to complete the tasks. 
+  You'll probably need to override some of theese styles.
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+header {
+    background-color: #e91e63;
+    color: #fff;
+    padding: 1rem;
+    align-items: center;
+}
+   
+
+main {
+    flex: 1;
+    padding: 2rem;
+    width:100vw;
+    height:50vh;
+    line-height:3vh;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.logo {
+    filter: brightness(1000%) contrast(1000%);
+    height: 50px;
+}
+
+.login-button {
+    float: right;
+    text-decoration: none;
+    color: #f4f4f4;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.login-button:hover {
+    background-color: lightcoral;
+    color:#f4f4f4;
+    width: 80px;
+}
+
+.button{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #e91e63;
+    color: #f4f4f4;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    height: 100px;
+    width: 300px;    
+}
+
+.button-review {
+    margin: 20px;
+}
+
+.submit-button {
+    background-color: #e91e63;
+    color: #f4f4f4;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    width: 98%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: lightcoral;
+}
+
+nav {
+    color: #333;
+    align-items: space-between;
+    padding: 10px;
+    height: 40px;
+}
+nav ul {
+    height: 30px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 100px;
+}
+
+.nav-login{
+    border-right: 1px solid lightcoral;
+    border-left: 1px solid lightcoral;
+}
+.nav-home {
+    border-left: 1px solid lightcoral;
+}
+
+nav ul li a:hover {
+    background-color: lightcoral;
+}
+
+.place-image {
+    display: flex;
+    justify-content: center;
+}
+.place-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.cards {
+    margin-top: 20px;
+    padding: 60px ;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    width: 500px;
+    height: 350px;
+}
+
+.info-card1 {
+    margin: 20px;
+    padding: 10px;
+}
+
+.info-card1 h1 {
+    margin: 20px;
+    padding: 10px;
+    font-size: 36px;
+}
+.card1 {
+    margin-top: 20px;
+    padding: 60px ;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    line-height: 1;
+}
+
+.reviews h2{
+    text-align: left;
+    margin-left: 20px ;
+    padding-top: 30px;
+}
+
+.review-card {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.rating-img {
+    padding-left: 3px;
+    width: 15px;
+    height: 15px;
+}
+
+.place-details {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.details-place {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.your-review {
+    margin-left: 20px;
+}
+
+.your-review h3 {
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+}
+
+.input-review {
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    width: 98%;
+}
+
+.reviews p {
+    text-align: left;
+}
+
+.rating-options {
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    width: 98%;
+}
+    
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e91e63;
+    margin-top: 20px;
+    padding: 1rem;
+    height: 80px;
+    color: #f4f4f4;
+    font-size: 20px ;
+}
