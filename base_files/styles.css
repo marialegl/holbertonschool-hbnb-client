@@ -10,7 +10,15 @@
     font-family: Arial, sans-serif;
 }
 
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -19,6 +27,13 @@ header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: auto;
 }
 
 nav a {
@@ -28,5 +43,66 @@ nav a {
 }
 
 main {
+    flex-grow: 1;
     padding: 2rem;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.input-error {
+    border-color: red;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
 }
