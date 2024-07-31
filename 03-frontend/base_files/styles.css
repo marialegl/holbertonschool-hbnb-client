@@ -172,15 +172,6 @@ nav ul li a:hover {
     padding: 10px;
     font-size: 36px;
 }
-.card1 {
-    margin-top: 20px;
-    padding: 60px ;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    line-height: 1;
-}
 
 .reviews h2{
     text-align: left;
