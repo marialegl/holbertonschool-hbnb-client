@@ -7,14 +7,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color:  #f8f8f8;
     color: #333;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -42,7 +42,7 @@ main {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -102,7 +102,7 @@ body {
 }
 
 .submit-button:hover {
-    background-color: lightcoral;
+    background-color: rgb(231, 148, 148);
 }
 
 nav {
@@ -157,7 +157,7 @@ nav ul li a:hover {
     align-items: center;
     text-align: center;
     border-radius: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #464545;
     width: 500px;
     height: 350px;
 }
