@@ -4,69 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place Details</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_place.css">
 </head>
 <body>
     <header>
         <img src="logo.png" class="logo" alt="Logo">
         <a href="login.html" class="login-button">Login</a> 
     </header>
+    
     <nav>
         <ul class="nav-links">
-            <li><a href="index.html" class="nav-home">Home</a></li>
-            <li><a href="login.html" class="nav-login">Login</a></li>
+            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
     </nav>
-    <main>
-        <section class="place-details">
-            <section class="info-card1">
+
+<main>
+        <div class="place-details">
+            <img src="path/to/image-large.jpg" alt="Large Place Image" class="place-image-large">
+            <div class="place-info">
                 <h1>Beautiful Beach House</h3>
-                <section class="card1">
-                    <p><b>Host:</b> name</p>
-                    <br>
-                    <p><b>Price per night:</b> $150</p>
-                    <br>
-                    <p><b>Location:</b> Los Angeles United State</p>
-                    <br>
-                    <p><b>Description:</b> A beutiful beach house ...</p>
-                    <br>
-                    <p><b>Amenities:</b> Wifi, Pool, Air conditioning</p>
-                </section>
-            </section>
-        <section class="reviews">
+                    <section class="card1">
+                        <p><b>Host:</b> name</p>
+                        <p><b>Price per night:</b> $150</p>
+                        <p><b>Location:</b> Los Angeles United State</p>
+                        <p><b>Description:</b> A beutiful beach house ...</p>
+                        <br>
+                        <p><b>Amenities:</b></p>
+                        <ul>
+                            <li>Amenity 1</li>
+                            <li>Amenity 2</li>
+                        </ul>
+                    </section>
+            </div>
+        </div>
+
+        <div class="reviews-container">
+                   
+            <section class="reviews">
             <h2>Review</h2>
-            <section class="review-card">
-                <section>
-                    <p><b>User</b></p>
-                    <p><b>review.comment</b></p>
-                    <p><b>Rating</b>
-                        <img src="star-solid.svg" alt="SVG" class="rating-img"></img>
-                        <img src="star-solid.svg" alt="SVG" class="rating-img"></img>
-                        <img src="star-solid.svg" alt="SVG" class="rating-img"></img>
-                    </p>
+                <section class="review-card">
+                    <section>
+                        <p><b>User</b></p>
+                        <p><b>review.comment</b></p>
+                        <p><b>Rating</b>
+                            <img src="star-solid.svg" alt="SVG" class="rating-img"></img>
+                            <img src="star-solid.svg" alt="SVG" class="rating-img"></img>
+                            <img src="star-solid.svg" alt="SVG" class="rating-img"></img>
+                        </p>
+                    </section>
                 </section>
             </section>
-        </section>
-        <section class="add_review.html">
-            <h2>Add a Review</h2>
-            <section class="your-review">
-                <h3>Your Review</h3>
-                <input class="input-review" type="text">
-                <br>
-                <br>
-                <p><b>Rating:</b></p>
-                <br>
-                <select class="rating-options">
-                    <option value="star">1 Start</option>
-                    <option value="star">2 Start</option>
-                    <option value="star">3 Start</option>
-                </select>
-                <br>
-                <input type="button" value="submit-button" class="submit-button">
+
+            <section class="reviews">
+                <h2>Add a Review</h2>
+                    <form class="add-review" action="submit_review" method="POST">
+                        <label for="comment">Comment:</label>
+                        <textarea id="comment" name="comment" required></textarea>
+                    
+                        <label for="rating">Rating:</label>
+                        <input type="number" id="rating" name="rating" min="1" max="5" required>
+                    
+                        <button type="submit">Submit Review</button>
+                    </form>
             </section>
+        </div>         
     </main>
+
     <footer>
-        &copy; 2024 Your Application. All rights reserved.
+        <p>All rights reserved © 2024</p>
     </footer>
-    <script src="scripts.js"></script>
+
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>

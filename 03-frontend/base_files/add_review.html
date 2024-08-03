@@ -4,33 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Review</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_add_review.css">
 </head>
 <body>
+
     <header>
-        <img src="logo.png" class="logo" alt="Logo">
-        <a href="login.html" class="login-button">Login</a> 
+        <img src="logo.png" alt="Logo" class="logo">
+        <a href="home.html" class="go_out-button">Go out</a>
     </header>
+
     <nav>
         <ul class="nav-links">
-            <li><a href="index.html" class="nav-home">Home</a></li>
-            <li><a href="login.html" class="nav-login">Login</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
+
     </nav>
+
     <main>
         <form id="review-form">
             <h2>Add a Review</h2>
             <label for="place">Place:</label>
             <input type="text" id="place" name="place" readonly>
-            
+            <br>
+            <br>
+            <br>
             <label for="review">Review:</label>
             <textarea id="review" name="review" required></textarea>
             
             <button type="submit">Submit</button>
         </form>
     </main>
+
     <footer>
-        &copy; 2024 Your Application. All rights reserved.
+        <p>All rights reserved © 2024</p>
     </footer>
-    <script src="scripts.js"></script>
+
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
