@@ -4,33 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Review</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_add_review.css">
 </head>
 <body>
+
     <header>
-        <img src="logo.png" class="logo" alt="Logo">
-        <a href="login.html" class="login-button">Login</a> 
+        <img src="logo.png" alt="Logo" class="logo">
+        <a href="home.html" class="go_out-button">Go out</a>
     </header>
+
     <nav>
         <ul class="nav-links">
-            <li><a href="index.html" class="nav-home">Home</a></li>
-            <li><a href="login.html" class="nav-login">Login</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
+            <li><a href="place.html" class="nav-link">Places</a></li>
+        </ul>
     </nav>
+
     <main>
-        <form id="review-form">
-            <h2>Add a Review</h2>
-            <label for="place">Place:</label>
-            <input type="text" id="place" name="place" readonly>
+        <div class="reviews-container">
+            <section class="reviews">
+                <h2>Review</h2>
+                    <section>
+                        <form id="review-form">
+
+                            <label for="placeId">Place:</label>
+                            <input type="text" id="placeId" name="place" readonly>
+                    
+                            <label for="review-title">Title:</label>
+                            <input type="text" id="review-title" placeholder="Review Title (optional)">
+                            
+                            <label for="review-text">Comment:</label>
+                            <textarea id="review-text" placeholder="Write your review here"></textarea>
+                            
+                            <section>
+                            <label class="review-text">Rating:</label>
+                                <div class="star-rating" id="review-rating">
+                                    <a href="#">★</a>
+                                    <a href="#">★</a>
+                                    <a href="#">★</a>
+                                    <a href="#">★</a>
+                                    <a href="#">★</a>
+                                </div>
+                            </section>
+
+                            <label for="visit-date">Visit date:</label>
+                            <input type="date" id="visit-date">
+
+                            <label for="service-rating">Service rating:</label>
+                            <input type="number" id="service-rating" min="1" max="5" placeholder="Service Rating">
+                            
+                            <label for="cleanliness-rating">Cleanliness rating:</label>
+                            <input type="number" id="cleanliness-rating" min="1" max="5" placeholder="Cleanliness Rating">
+                            
+                            <label for="comfort-rating">Comfort rating:</label>
+                            <input type="number" id="comfort-rating" min="1" max="5" placeholder="Comfort Rating">
+                            
+                            <label for="price-rating">Place rating:</label>
+                            <input type="number" id="price-rating" min="1" max="5" placeholder="Price Rating">
+                        
+                        <button type="submit">Submit Review</button>       
+                        </form>
+                    </section>
+            </section>
             
-            <label for="review">Review:</label>
-            <textarea id="review" name="review" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
+        </div>
     </main>
+
     <footer>
-        &copy; 2024 Your Application. All rights reserved.
+        <p>All rights reserved © 2024</p>
     </footer>
-    <script src="scripts.js"></script>
+
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
