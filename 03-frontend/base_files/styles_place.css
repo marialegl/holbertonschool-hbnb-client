@@ -32,7 +32,7 @@ header {
     height: 65px;
 }
 
-.login-button {
+.go_out-button {
     text-decoration: none;
     color: white;
     box-shadow: 0px 4px 6px #e91e62c5;
@@ -43,9 +43,10 @@ header {
     background-color: #e91e63;
 }
 
-.login-button:hover {
+.go_out-button:hover {
     animation: myAnimation 1s ease-in-out;
 }
+
 
 /* Navigation */
 nav {
@@ -74,7 +75,7 @@ nav {
 }
 
 .nav-links:hover {
-    transform: scale(1.1), ;
+    transform: scale(1.1);
 }
 
 /* Main */
@@ -178,48 +179,30 @@ main {
     display: inline-block;
     font-size: 20px;
     font-weight: bold;
+    color: gold;
     font-family: 'Montserrat', sans-serif;
 }
 
-.add-review {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-    border-radius: 15px;
-}
-
-.add-review label {
-    margin-bottom: 10px;
-    border-radius: 15px;
-    font-size: 20px;
-}
-
-.add-review textarea,
-.add-review input {
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    box-shadow: 0px 4px 6px #343535;
-    font-size: 20px;
-    background-color: rgba(228, 222, 222, 0.911);
-}
-
-.add-review button {
+.button_add_review {
     background-color: #e91e63;
-    box-shadow: 0px 4px 6px #343535;
+    box-shadow: 0px 4px 6px #e91e62c5;
     color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: none;
+    padding: 15px 32px;
     border-radius: 10px;
-    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-bottom: 45px;
+    text-shadow: 0px 2px 2px #2a2b2b;
     font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    position: center;
+    cursor: pointer;
 }
 
-.add-review button:hover {
+.button_add_review:hover {
     animation: myAnimation 1s ease-in-out;
 }
 
@@ -229,4 +212,5 @@ footer {
     padding: 10px;
     color: #fff;
     background-image: radial-gradient(circle at center, #2f2f30, #ffffff);
+    position: fixed;
 }

@@ -9,12 +9,12 @@
 <body>
     <header>
         <img src="logo.png" class="logo" alt="Logo">
-        <a href="login.html" class="login-button">Login</a> 
+        <a href="home.html" class="go_out-button">Go out</a>
     </header>
     
     <nav>
         <ul class="nav-links">
-            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
             <li><a href="login.html" class="nav-link">Login</a></li>
     </nav>
 
@@ -55,17 +55,8 @@
                 </section>
             </section>
 
-            <section class="reviews">
-                <h2>Add a Review</h2>
-                    <form class="add-review" action="submit_review" method="POST">
-                        <label for="comment">Comment:</label>
-                        <textarea id="comment" name="comment" required></textarea>
-                    
-                        <label for="rating">Rating:</label>
-                        <input type="number" id="rating" name="rating" min="1" max="5" required>
-                    
-                        <button type="submit">Submit Review</button>
-                    </form>
+            <section>
+                <a href="add_review.html" class="button_add_review">Add Review</a></button>
             </section>
         </div>         
     </main>

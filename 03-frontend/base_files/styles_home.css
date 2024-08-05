@@ -5,9 +5,8 @@ body {
     padding: 0;
     text-align: center;
     position: relative;
-    background-color: #ffffff; /* Color de fondo suave */
+    background-color: white; /* Color de fondo suave */
 }
-
 
 /* Header */
 header {
@@ -76,9 +75,8 @@ nav {
 }
 
 .nav-links:hover {
-    transform: scale(1.1), ;
+    transform: scale(1.1);
 }
-
 
 /* Main */
 main {
@@ -176,7 +174,7 @@ footer {
     text-align: center;
     padding: 10px;
     color: #fff; 
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-image: radial-gradient(circle at center, #2f2f30, #ffffff);
