@@ -46,7 +46,7 @@ header {
     background-color: #e91e63;
 }
 
-.go_out-button:hover {
+.login-button:hover {
     animation: myAnimation 1s ease-in-out;
 }
 
