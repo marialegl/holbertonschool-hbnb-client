@@ -51,7 +51,7 @@ function displayPlaces(places) {
         const placeElement = document.createElement('div');
         placeElement.className = 'place-item';
         placeElement.innerHTML = `
-            <h3>${place.name}</h3>
+            <h3>${place.id}</h3>
             <p>${place.description}</p>
             <p><strong>Location:</strong> ${place.city_name}, ${place.country_name}</p>
             <p><strong>Price per night:</strong> $${place.price_per_night}</p>
