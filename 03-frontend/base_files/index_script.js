@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', checkAuthentication);
 function checkAuthentication() {
     const token = getCookie('token');
     const loginLink = document.getElementById('login-link');
@@ -22,7 +23,7 @@ function getCookie(name) {
 
 async function fetchPlaces(token) {
     try {
-        const response = await fetch('https://127.0.0.1:5000/places', {
+        const response = await fetch('http://127.0.0.1:5000/places', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`
@@ -52,7 +53,8 @@ function displayPlaces(places) {
         placeElement.innerHTML = `
             <h3>${place.name}</h3>
             <p>${place.description}</p>
-            <p><strong>Location:</strong> ${place.location}</p>
+            <p><strong>Location:</strong> ${place.city_name}, ${place.country_name}</p>
+            <p><strong>Price per night:</strong> $${place.price_per_night}</p>
         `;
         placesList.appendChild(placeElement);
     });
