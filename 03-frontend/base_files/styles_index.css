@@ -33,7 +33,7 @@ header {
     height: 65px;
 }
 
-.login-button {
+.go_out-button {
     text-decoration: none;
     color: white;
     box-shadow: 0px 4px 6px #e91e62c5;
@@ -44,7 +44,7 @@ header {
     background-color: #e91e63;
 }
 
-.login-button:hover {
+.go_out-button:hover {
     animation: myAnimation 1s ease-in-out;
 }
 
@@ -75,7 +75,7 @@ nav {
 }
 
 .nav-links:hover {
-    transform: scale(1.1), ;
+    transform: scale(1.1);
 }
 
 /* Main */
@@ -151,7 +151,7 @@ footer {
     text-align: center;
     padding: 10px;
     color: #fff; 
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-image: radial-gradient(circle at center, #2f2f30, #ffffff);
