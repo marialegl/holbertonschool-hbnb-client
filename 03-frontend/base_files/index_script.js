@@ -62,16 +62,34 @@ function displayPlaces(places) {
 
 // Implement client-side filtering
 
-document.getElementById('country-filter').addEventListener('change', (event) => {
-    const selectedCountry = event.target.value;
-    const placesItems = document.querySelectorAll('.place-item');
+// Cargar lugares y configurar el filtro
+fetch('../mock-api/data/places.json')
+    .then(response => response.json())
+    .then(places => {
+        displayPlaces(places); // Mostrar todos los lugares inicialmente
 
-    placesItems.forEach(item => {
-        const location = item.querySelector('p strong').nextSibling.textContent.trim();
-        if (selectedCountry === 'all' || location === selectedCountry) {
-            item.style.display = 'block';
-        } else {
-            item.style.display = 'none';
-        }
+        document.getElementById('country-filter').addEventListener('change', function() {
+            const selectedCountry = this.value;
+            const filteredPlaces = places.filter(place => selectedCountry === 'all' || place.country_code === selectedCountry);
+            displayPlaces(filteredPlaces); 
+        });
     });
-});
+
+// Cargar y popular el filtro de países
+fetch('../mock-api/data/countries.json')
+    .then(response => response.json())
+    .then(countries => {
+        const countryFilter = document.getElementById('country-filter');
+
+        const allOption = document.createElement('option');
+        allOption.value = 'all';
+        allOption.textContent = 'All Countries';
+        countryFilter.appendChild(allOption);
+
+        countries.forEach(country => {
+            const option = document.createElement('option');
+            option.value = country.code;
+            option.textContent = country.name;
+            countryFilter.appendChild(option);
+        });
+    }); 
