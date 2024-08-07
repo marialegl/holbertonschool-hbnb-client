@@ -41,26 +41,11 @@ async function fetchPlaces(token) {
     } 
 }
 
-let countries = [];
-
-// Cargar los datos de países
-fetch('03-frontend/mock-api/data/countries.json')
-    .then(response => response.json())
-    .then(data => {
-        countries = data;
-        // Ahora que los países se han cargado, podemos mostrar los lugares
-        displayPlaces(places);
-    })
-    .catch(error => console.error('Error loading countries:', error));
-
 // populate places list:
 
 function displayPlaces(places) {
     const placesList = document.getElementById('places-list');
-    const countryFilter = document.getElementById('country-filter');
-    const uniqueCountries = new Set();
     placesList.innerHTML = ''; // Clear any existing content
-    countryFilter.innerHTML = '<option value="all">All</option>';
 
     places.forEach(place => {
         const placeElement = document.createElement('div');
@@ -72,32 +57,39 @@ function displayPlaces(places) {
             <p><strong>Price per night:</strong> $${place.price_per_night}</p>
         `;
         placesList.appendChild(placeElement);
-        uniqueCountries.add(place.country_code);
-    });
-
-        uniqueCountries.forEach(code => {
-        const country = countries.find(country => country.code === code);
-        if (country) {
-            const option = document.createElement('option');
-            option.value = country.code;
-            option.textContent = country.name;
-            countryFilter.appendChild(option);
-        }
     });
 }
 
 // Implement client-side filtering
 
-document.getElementById('country-filter').addEventListener('change', (event) => {
-    const selectedCountryCode = event.target.value;
-    const placesItems = document.querySelectorAll('.place-item');
+// Cargar lugares y configurar el filtro
+fetch('../mock-api/data/places.json')
+    .then(response => response.json())
+    .then(places => {
+        displayPlaces(places); // Mostrar todos los lugares inicialmente
 
-    placesItems.forEach(item => {
-        const countryCode = item.dataset.countryCode;
-        if (selectedCountryCode === 'all' || countryCode === selectedCountryCode) {
-            item.style.display = 'block';
-        } else {
-            item.style.display = 'none';
-        }
+        document.getElementById('country-filter').addEventListener('change', function() {
+            const selectedCountry = this.value;
+            const filteredPlaces = places.filter(place => selectedCountry === 'all' || place.country_code === selectedCountry);
+            displayPlaces(filteredPlaces); // Mostrar solo los lugares filtrados
+        });
+    });
+
+// Cargar y popular el filtro de países
+fetch('../mock-api/data/countries.json')
+    .then(response => response.json())
+    .then(countries => {
+        const countryFilter = document.getElementById('country-filter');
+
+        const allOption = document.createElement('option');
+        allOption.value = 'all';
+        allOption.textContent = 'All Countries';
+        countryFilter.appendChild(allOption);
+
+        countries.forEach(country => {
+            const option = document.createElement('option');
+            option.value = country.code;
+            option.textContent = country.name;
+            countryFilter.appendChild(option);
+        });
     }); 
-});
