@@ -71,7 +71,7 @@ fetch('../mock-api/data/places.json')
         document.getElementById('country-filter').addEventListener('change', function() {
             const selectedCountry = this.value;
             const filteredPlaces = places.filter(place => selectedCountry === 'all' || place.country_code === selectedCountry);
-            displayPlaces(filteredPlaces); // Mostrar solo los lugares filtrados
+            displayPlaces(filteredPlaces); 
         });
     });
 
