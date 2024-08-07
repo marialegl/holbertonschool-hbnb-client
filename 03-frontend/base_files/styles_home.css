@@ -5,7 +5,7 @@ body {
     padding: 0;
     text-align: center;
     position: relative;
-    background-color: #ffffff; /* Color de fondo suave */
+    background-color: white; /* Color de fondo suave */
 }
 
 /* Header */
@@ -33,7 +33,7 @@ header {
     height: 65px;
 }
 
-.go_out-button {
+.login-button {
     text-decoration: none;
     color: white;
     box-shadow: 0px 4px 6px #e91e62c5;
@@ -44,7 +44,7 @@ header {
     background-color: #e91e63;
 }
 
-.go_out-button:hover {
+.login-button:hover {
     animation: myAnimation 1s ease-in-out;
 }
 
@@ -83,7 +83,7 @@ main {
     padding: 50px;
 }
 
-.title-avilable-places {
+.title-future-trips {
     font-weight: bold;
     margin-bottom: 45px;
     color: #4c4c4d;
@@ -105,6 +105,7 @@ main {
     gap: 70px;
     flex-wrap: nowrap;
     border-radius: 15px;
+    border:#2a2b2b 3px solid;
 }
 
 .details-place {
@@ -125,11 +126,33 @@ main {
 
 .button {
     background-color: #e91e63;
+    box-shadow: 0px 4px 6px #e91e62c5;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-bottom: 45px;
+    text-shadow: 0px 2px 2px #2a2b2b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    position: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    animation: myAnimation 1s ease-in-out;
+}
+
+.button_reserve {
+    background-color: #e91e63;
     box-shadow: 0px 4px 6px #343535;
     color: white;
     padding: 15px 32px;
     text-align: center;
-    text-shadow: 0px 2px 2px #2a2b2b;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -142,9 +165,10 @@ main {
     border-radius: 5px;
 }
 
-.button:hover {
-    animation: myAnimation 1s ease-in-out;
-}
+.button_reserve:hover {
+    background: linear-gradient(to left, rgb(255, 39, 103), rgb(187, 14, 80));
+    transform: scale(1.1);
+  }
 
 /* Footer */
 footer {
