@@ -33,7 +33,7 @@ header {
     height: 65px;
 }
 
-.go_out-button {
+.login-button {
     text-decoration: none;
     color: white;
     box-shadow: 0px 4px 6px #e91e62c5;
@@ -44,7 +44,7 @@ header {
     background-color: #e91e63;
 }
 
-.go_out-button:hover {
+.login-button:hover {
     animation: myAnimation 1s ease-in-out;
 }
 
