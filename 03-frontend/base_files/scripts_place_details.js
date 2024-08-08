@@ -24,11 +24,11 @@ function getCookie(name) {
 
 async function fetchPlaceDetails(placeId) {
     try {
-        const response = await fetch('/mock-api/data/places.json'); // Cargar el archivo places.json
+        const response = await fetch('../mock-api/data/places.json');
 
         if (response.ok) {
             const places = await response.json();
-            const place = places.find(p => p.id === placeId); // Buscar el lugar por ID
+            const place = places.find(p => p.id === placeId);
             if (place) {
                 displayPlaceDetails(place);
             } else {
@@ -43,44 +43,40 @@ async function fetchPlaceDetails(placeId) {
 }
 
 function displayPlaceDetails(place) {
+    console.log(place);
+    
     const placeDetailsSection = document.querySelector('.info-card1');
     placeDetailsSection.innerHTML = '';
 
-    // Create a container for the place details
     const placeInfo = document.createElement('section');
     placeInfo.className = 'card1';
 
-    // Create and append the place name
     const nameElement = document.createElement('h1');
-    nameElement.textContent = place.name;
+    nameElement.textContent = place.id;
     placeInfo.appendChild(nameElement);
 
-    // Create and append the place host
     const hostElement = document.createElement('p');
     hostElement.innerHTML = `<b>Host:</b> ${place.host}`;
     placeInfo.appendChild(hostElement);
 
-    // Create and append the price per night
     const priceElement = document.createElement('p');
     priceElement.innerHTML = `<b>Price per night:</b> $${place.price}`;
     placeInfo.appendChild(priceElement);
 
-    // Create and append the location
     const locationElement = document.createElement('p');
     locationElement.innerHTML = `<b>Location:</b> ${place.location}`;
     placeInfo.appendChild(locationElement);
 
-    // Create and append the description
+
     const descriptionElement = document.createElement('p');
     descriptionElement.innerHTML = `<b>Description:</b> ${place.description}`;
     placeInfo.appendChild(descriptionElement);
 
-    // Create and append amenities
     const amenitiesElement = document.createElement('p');
     amenitiesElement.innerHTML = `<b>Amenities:</b> ${place.amenities.join(', ')}`;
     placeInfo.appendChild(amenitiesElement);
 
-    // Create and append images
+
     if (place.images && place.images.length > 0) {
         const imagesContainer = document.createElement('div');
         imagesContainer.className = 'place-images';
@@ -93,10 +89,8 @@ function displayPlaceDetails(place) {
         placeInfo.appendChild(imagesContainer);
     }
 
-    // Append the newly created place details to the section
     placeDetailsSection.appendChild(placeInfo);
 
-    // Populate reviews
     const reviewsContainer = document.querySelector('.reviews');
     reviewsContainer.innerHTML = '<h2>Reviews</h2>';
     place.reviews.forEach(review => {
@@ -104,7 +98,7 @@ function displayPlaceDetails(place) {
         reviewCard.className = 'review-card';
         reviewCard.innerHTML = `
             <section>
-                <p><b>${review.user}</b></p>
+                <p><b>${review.user_name}</b></p>
                 <p><b>${review.comment}</b></p>
                 <p><b>Rating</b> ${'★'.repeat(review.rating)}</p>
             </section>
