@@ -32,8 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const cleanlinessRating = document.getElementById('cleanliness-rating').value;
             const comfortRating = document.getElementById('comfort-rating').value;
             const priceRating = document.getElementById('price-rating').value;
-            
-            // Construir el objeto de datos de la reseña
             const reviewData = {
                 reviewTitle,
                 reviewText,
