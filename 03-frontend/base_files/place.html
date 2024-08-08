@@ -6,64 +6,42 @@
     <title>Place Details</title>
     <link rel="stylesheet" href="styles_place.css">
 </head>
-<body>
+<body onload="checkAuthentication()">
     <header>
         <img src="logo.png" class="logo" alt="Logo">
-        <a href="index.html" class="login-button">Go out</a>
     </header>
-    
     <nav>
         <ul class="nav-links">
-            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="html/index.html" class="nav-home">Home</a></li>
+        </ul>
     </nav>
-
-<main>
-        <div class="place-details">
-            <img src="path/to/image-large.jpg" alt="Large Place Image" class="place-image-large">
-            <div class="place-info">
-                <h1>Beautiful Beach House</h3>
-                    <section class="card1">
-                        <p><b>Host:</b> name</p>
-                        <p><b>Price per night:</b> $150</p>
-                        <p><b>Location:</b> Los Angeles United State</p>
-                        <p><b>Description:</b> A beutiful beach house ...</p>
-                        <br>
-                        <p><b>Amenities:</b></p>
-                        <ul>
-                            <li>Amenity 1</li>
-                            <li>Amenity 2</li>
-                        </ul>
-                    </section>
-            </div>
-        </div>
-
-        <div class="reviews-container">
-                   
+    <main>
+        <section class="place-details">
+            <section class="info-card1">
+                <!-- El contenido se llenará dinámicamente -->
+            </section>
             <section class="reviews">
-            <h2>Review</h2>
+                <h2>Reviews</h2>
                 <section class="review-card">
                     <section>
                         <p><b>User</b></p>
-                        <p><b>review.comment</b></p>
+                        <p><b>Review comment</b></p>
                         <p><b>Rating</b>
-                            <img src="star-solid.svg" alt="SVG" class="rating-img"></img>
-                            <img src="star-solid.svg" alt="SVG" class="rating-img"></img>
-                            <img src="star-solid.svg" alt="SVG" class="rating-img"></img>
+                            <img src="star-solid.svg" alt="SVG" class="rating-img">
+                            <img src="star-solid.svg" alt="SVG" class="rating-img">
+                            <img src="star-solid.svg" alt="SVG" class="rating-img">
                         </p>
                     </section>
                 </section>
             </section>
-
-            <section>
-                <a href="add_review.html" class="button_add_review">Add Review</a></button>
+            <section id="add-review">
+                <a href="add_review.html" class="submit-button">Add Review for this place</a>
             </section>
-        </div>         
+        </section>
     </main>
-
     <footer>
-        <p>All rights reserved © 2024</p>
+        &copy; 2024 Your Application. All rights reserved.
     </footer>
-
-    <script type="text/javascript" src="scripts.js"></script>
+    <script src="scripts_place_details.js"></script>
 </body>
 </html>
