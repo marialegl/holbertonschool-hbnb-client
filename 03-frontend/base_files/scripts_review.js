@@ -64,16 +64,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 async function submitReview(token, placeId, reviewData) {
     try {
-        const response = await fetch('https://127.0.0.1:5000/places/${placeId}/reviews', {
+        const response = await fetch('/places/${placeId}/reviews', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`
             },
-            body: JSON.stringify({placeId, reviewData})
+            body: JSON.stringify({ reviewData })
         });
 
         handleResponse(response);
