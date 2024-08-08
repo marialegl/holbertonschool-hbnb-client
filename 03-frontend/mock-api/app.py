@@ -8,7 +8,7 @@ from uuid import uuid4
 app = Flask(__name__)
 CORS(app)
 app.config.from_object('config.Config')
-
+CORS(app)
 jwt = JWTManager(app)
 
 with open('data/users.json') as f:

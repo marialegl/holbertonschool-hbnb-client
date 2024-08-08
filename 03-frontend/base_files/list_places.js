@@ -55,7 +55,6 @@ function displayPlaces(places) {
             <p>${place.description}</p>
             <p><strong>Location:</strong> ${place.city_name}, ${place.country_name}</p>
             <p><strong>Price per night:</strong> $${place.price_per_night}</p>
-            <a href="place.html" class="button-card-places">View details</a>
         `;
         placesList.appendChild(placeElement);
     });
@@ -63,34 +62,16 @@ function displayPlaces(places) {
 
 // Implement client-side filtering
 
-// Cargar lugares y configurar el filtro
-fetch('../mock-api/data/places.json')
-    .then(response => response.json())
-    .then(places => {
-        displayPlaces(places); // Mostrar todos los lugares inicialmente
+document.getElementById('country-filter').addEventListener('change', (event) => {
+    const selectedCountry = event.target.value;
+    const placesItems = document.querySelectorAll('.place-item');
 
-        document.getElementById('country-filter').addEventListener('change', function() {
-            const selectedCountry = this.value;
-            const filteredPlaces = places.filter(place => selectedCountry === 'all' || place.country_code === selectedCountry);
-            displayPlaces(filteredPlaces); 
-        });
+    placesItems.forEach(item => {
+        const location = item.querySelector('p strong').nextSibling.textContent.trim();
+        if (selectedCountry === 'all' || location === selectedCountry) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
     });
-
-// Cargar y popular el filtro de países
-fetch('../mock-api/data/countries.json')
-    .then(response => response.json())
-    .then(countries => {
-        const countryFilter = document.getElementById('country-filter');
-
-        const allOption = document.createElement('option');
-        allOption.value = 'all';
-        allOption.textContent = 'All Countries';
-        countryFilter.appendChild(allOption);
-
-        countries.forEach(country => {
-            const option = document.createElement('option');
-            option.value = country.code;
-            option.textContent = country.name;
-            countryFilter.appendChild(option);
-        });
-    }); 
+});
