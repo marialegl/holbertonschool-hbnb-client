@@ -6,41 +6,53 @@
     <title>Place Details</title>
     <link rel="stylesheet" href="styles_place.css">
 </head>
-<body onload="checkAuthentication()">
+<body>
     <header>
         <img src="logo.png" class="logo" alt="Logo">
+        <a href="home.html" class="go_out-button">Go out</a>
     </header>
+    
     <nav>
         <ul class="nav-links">
-            <li><a href="index.html" class="nav-home">Home</a></li>
-        </ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
     </nav>
+
     <main>
-        <section class="place-details">
-            <section class="info-card1">
-            </section>
-            <section class="reviews">
-                <h2>Reviews</h2>
-                <section class="review-card">
-                    <section>
-                        <p><b>User</b></p>
-                        <p><b>Review comment</b></p>
-                        <p><b>Rating</b>
-                            <img src="star-solid.svg" alt="SVG" class="rating-img">
-                            <img src="star-solid.svg" alt="SVG" class="rating-img">
-                            <img src="star-solid.svg" alt="SVG" class="rating-img">
-                        </p>
-                    </section>
+        <div class="place-details">
+            <img id="place-image" src="" alt="Large Place Image" class="place-image-large" style="display: none;">
+            <div class="place-info">
+                <h1 id="place-name">Beautiful Beach House</h1>
+                <section class="card1">
+                    <p id="place-host"><b>Host:</b></p>
+                    <p id="place-price"><b>Price per night:</b></p>
+                    <p id="place-location"><b>Location:</b></p>
+                    <p id="place-description"><b>Description:</b></p>
+                    <br>
+                    <p><b>Amenities:</b></p>
+                    <ul id="place-amenities">
+                        <!-- Amenities will be dynamically added here -->
+                    </ul>
                 </section>
+            </div>
+        </div>
+
+        <div class="reviews-container">
+            <section class="reviews" id="reviews-list">
+                <h2>Reviews</h2>
+                <!-- Reviews will be dynamically added here -->
             </section>
-            <section id="add-review">
-                <a href="add_review.html" class="submit-button">Add Review for this place</a>
+
+            <section>
+                <a href="add_review.html" class="button_add_review">Add Review</a>
             </section>
-        </section>
-    </main>
+        </div>         
+    </main>    
+
     <footer>
-        &copy; 2024 Your Application. All rights reserved.
+        <p>All rights reserved © 2024</p>
     </footer>
-    <script src="scripts_place_details.js"></script>
+
+    <script type="text/javascript" src="scripts_place_details.js"></script>
 </body>
 </html>

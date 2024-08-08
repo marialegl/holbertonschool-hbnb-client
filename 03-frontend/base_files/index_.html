@@ -21,20 +21,34 @@
 
     <main>
         <h1 class="title-future-trips">Inspiration for future trips</h1>
-        
+    
         <section id="filter">
             <label for="country-filter"><b>Filter by Country:</b></label>
             <select class="country-filter" id="country-filter">
-                <!-- Opciones de país se cargarán dinámicamente -->
             </select>
         </section>
-    
-        <section class="places-container" id="places-list">
-            <!-- Los lugares se mostrarán dinámicamente aquí -->
+
+        <div class="place" data-country="US"></div>
+        <div class="place" data-country="UY"></div>
+        <div class="place" data-country="MX"></div>
+        <div class="place" data-country="BR"></div>
+        <div class="place" data-country="AR"></div>
+        <div class="place" data-country="GB"></div>
+        <div class="place" data-country="FR"></div>
+        <div class="place" data-country="DE"></div>
+        <div class="place" data-country="IT"></div>
+        <div class="place" data-country="ES"></div>
+        <div class="place" data-country="JP"></div>
+        <div class="place" data-country="CN"></div>
+        <div class="place" data-country="IN"></div>
+        <div class="place" data-country="RU"></div>
+        <div class="place" data-country="AU"></div>
+        <div class="place" data-country="CA"></div>
+
+        <section class="place-card" id="places-list">
+            <!--Places are displayed dynamically-->
         </section>
     </main>
-    
-
     <footer>
         <p>All rights reserved © 2024</p>
     </footer>

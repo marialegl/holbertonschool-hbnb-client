@@ -50,7 +50,7 @@ function displayPlaces(places) {
             <p>${place.description}</p>
             <p><strong>Location:</strong> ${place.city_name}, ${place.country_name}</p>
             <p><strong>Price per night:</strong> $${place.price_per_night}</p>
-            <a href="place.html" class="button-card-places">View details</a>
+            <a href="place.html?placeId=${place.id}" class="button-card-places">View details</a>
         `;
         placesList.appendChild(placeElement);
     });
