@@ -56,15 +56,15 @@ function displayPlaceDetails(place) {
     placeInfo.appendChild(nameElement);
 
     const hostElement = document.createElement('p');
-    hostElement.innerHTML = `<b>Host:</b> ${place.host}`;
+    hostElement.innerHTML = `<b>Host:</b> ${place.host_name}`;
     placeInfo.appendChild(hostElement);
 
     const priceElement = document.createElement('p');
-    priceElement.innerHTML = `<b>Price per night:</b> $${place.price}`;
+    priceElement.innerHTML = `<b>Price per night:</b> $${place.price_per_night}`;
     placeInfo.appendChild(priceElement);
 
     const locationElement = document.createElement('p');
-    locationElement.innerHTML = `<b>Location:</b> ${place.location}`;
+    locationElement.innerHTML = `<b>Location:</b> ${place.city_name}`;
     placeInfo.appendChild(locationElement);
 
 
@@ -103,6 +103,16 @@ function displayPlaceDetails(place) {
                 <p><b>Rating</b> ${'★'.repeat(review.rating)}</p>
             </section>
         `;
+        
         reviewsContainer.appendChild(reviewCard);
     });
+
+    const reviewButton = document.createElement('section');
+    reviewButton.className = 'submit-button'
+    reviewButton.innerHTML = `
+        <section>
+            <a href="add_review.html?placeId=${place.id}" class="button-reviews">Add review</a>
+        </section>
+    `;
+    reviewsContainer.appendChild(reviewButton);
 }

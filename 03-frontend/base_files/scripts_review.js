@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const token = checkAuthentication();
     const placeId = getPlaceIdFromURL();
 
+    document.getElementById('placeId').value = placeId;
+
     if (reviewForm) {
         reviewForm.addEventListener('submit', async (event) => {
             event.preventDefault();
