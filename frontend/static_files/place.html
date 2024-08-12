@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Details</title>
+    <link rel="stylesheet" href="styles_place.css">
+</head>
+
+<body onload="checkAuthentication()">
+
+    <header>
+        <img src="logo.png" class="logo" alt="Logo">
+        <a href="home.html" class="go_out-button">Go out</a>
+    </header>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="place-details">
+            <div class="place-image-container"></div>
+            <div class="place-info-container"></div>
+            <div class="reviews"></div>
+            <div id="add-review"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>All rights reserved © 2024</p>
+    </footer>
+    <script src="place_scripts.js"></script>
+</body>
+</html>

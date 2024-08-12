@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration for future trips</title>
+    <link rel="stylesheet" href="styles_index.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" class="logo" alt="Logo">
+        <a href="home.html" class="go_out-button">Go out</a>
+    </header>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="title-future-trips">Inspiration for future trips</h1>
+    
+        <section id="filter">
+            <label for="country-filter"><b>Filter by Country:</b></label>
+            <select class="country-filter" id="country-filter">
+                <!-- Options will be dynamically added here -->
+            </select>
+        </section>
+
+        <section class="place-card" id="places-list">
+            <!--Places are displayed dynamically-->
+        </section>
+        
+    </main>
+    <footer>
+        <p>All rights reserved © 2024</p>
+    </footer>
+    <script src="index_script.js"></script>
+</body>
+</html>
