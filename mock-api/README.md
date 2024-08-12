@@ -180,7 +180,6 @@ python test_login.py
 python test_get_places.py
 python test_get_place.py
 python test_add_review.py
-python test_cors.py
 ```
 
 These scripts will make HTTP requests to the API endpoints and print the results, helping you ensure that each part of the API is working as expected.

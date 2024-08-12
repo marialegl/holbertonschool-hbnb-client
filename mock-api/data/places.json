@@ -4,6 +4,9 @@
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A lovely place to stay.",
+        "images": [
+            "https://thetravelexpert.ie/wp-content/uploads/2021/05/Standard-Hotel2-e1622317694638.jpg"
+        ],
         "price_per_night": 100.0,
         "city_id": "city-1",
         "city_name": "New York",
@@ -13,8 +16,12 @@
         "number_of_bathrooms": 2,
         "max_guests": 6,
         "latitude": 40.7128,
-        "longitude": -74.0060,
-        "amenities": ["WiFi", "Pool", "Air Conditioning"],
+        "longitude": -74.006,
+        "amenities": [
+            "WiFi",
+            "Pool",
+            "Air Conditioning"
+        ],
         "reviews": [
             {
                 "user_name": "Jane Smith",
@@ -25,6 +32,18 @@
                 "user_name": "Alice Johnson",
                 "rating": 4,
                 "comment": "Great location but a bit noisy."
+            },
+            {
+                "user_name": "Emily Watson",
+                "title": "A Cozy Retreat in the City",
+                "rating": 5,
+                "comment": "This apartment was a perfect blend of comfort and style. The location was ideal, close to all the best spots in town. The bed was incredibly comfortable, and I loved the little touches, like the fresh flowers and soft blankets. A wonderful experience overall!",
+                "visit_date": "2024-06-15",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "4",
+                "place_id": "place-1"
             }
         ]
     },
@@ -33,6 +52,9 @@
         "host_id": "user-2",
         "host_name": "Jane Smith",
         "description": "A cozy cottage in the countryside.",
+        "images": [
+            "https://www.compass.com/m/337bfccce2bbc764f4115d9dece175a82aa91d79_img_0_b8c8f/origin.jpg"
+        ],
         "price_per_night": 80.0,
         "city_id": "city-2",
         "city_name": "Boston",
@@ -43,14 +65,45 @@
         "max_guests": 4,
         "latitude": 42.3601,
         "longitude": -71.0589,
-        "amenities": ["WiFi", "Fireplace"],
-        "reviews": []
+        "amenities": [
+            "WiFi",
+            "Fireplace"
+        ],
+        "reviews": [
+            {
+                "user_name": "Lily Davis",
+                "title": "Lovely House but Overpriced",
+                "rating": 3,
+                "comment": "The house was lovely, with a beautiful garden and cozy interior. However, I felt it was overpriced for what it offered. The amenities were basic, and the Wi-Fi was slow. It\u2019s a nice place, but I expected more for the price.",
+                "visit_date": "2024-07-22",
+                "service_rating": "4",
+                "cleanliness_rating": "5",
+                "comfort_rating": "4",
+                "price_rating": "2",
+                "place_id": "place-2"
+            },
+            {
+                "user_name": "Evelyn Mitchell",
+                "title": "Disappointing Stay",
+                "rating": 2,
+                "comment": "I was really looking forward to staying here, but unfortunately, the experience was disappointing. The house was not as clean as I expected, and the furniture was worn out. The photos were misleading, and I felt that the price was too high for what was offered.",
+                "visit_date": "2024-06-15",
+                "service_rating": "3",
+                "cleanliness_rating": "2",
+                "comfort_rating": "2",
+                "price_rating": "2",
+                "place_id": "place-2"
+            }
+        ]
     },
     {
         "id": "place-3",
         "host_id": "user-3",
         "host_name": "Alice Johnson",
         "description": "A beautiful beach house.",
+        "images": [
+            "https://assets.traveltriangle.com/blog/wp-content/uploads/2014/11/Urbanspa.jpg"
+        ],
         "price_per_night": 150.0,
         "city_id": "city-3",
         "city_name": "Los Angeles",
@@ -61,14 +114,58 @@
         "max_guests": 8,
         "latitude": 34.0522,
         "longitude": -118.2437,
-        "amenities": ["WiFi", "Pool", "Beach Access"],
-        "reviews": []
+        "amenities": [
+            "WiFi",
+            "Pool",
+            "Beach Access"
+        ],
+        "reviews": [
+            {
+                "user_name": "Jane Smith",
+                "title": "Stunning Views and Great Amenities",
+                "rating": 5,
+                "comment": "We had an amazing time at this stunning apartment. The views from the balcony were breathtaking. The pool and gym facilities were top-notch. The hosts were very responsive and helpful.",
+                "visit_date": "2024-08-02",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "5",
+                "place_id": "place-3"
+            },
+            {
+                "user_name": "John Doe",
+                "title": "A Slice of Heaven by the Beach",
+                "rating": 5,
+                "comment": "From the moment I stepped foot into this home, I knew I had found my paradise. The ocean views are simply breathtaking, and the house is decorated with exquisite taste that makes you feel right at home. The terrace is perfect for enjoying a morning coffee or a starry night with good company. I will definitely be back!",
+                "visit_date": "2024-07-01",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "5",
+                "place_id": "place-3"
+            },
+            {
+                "user_name": "Jane Smith",
+                "title": "A Slice of Heaven by the Beach",
+                "rating": 5,
+                "comment": "This house was beautiful and well-decorated, but there were a few issues. The heating system was not working properly, making it chilly during the night. Additionally, the kitchen appliances were a bit outdated. It\u2019s a nice place, but it could use some updates.",
+                "visit_date": "2024-04-14",
+                "service_rating": "5",
+                "cleanliness_rating": "4",
+                "comfort_rating": "5",
+                "price_rating": "4",
+                "place_id": "place-3"
+            }
+        ]
     },
     {
         "id": "place-4",
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A stylish apartment in downtown.",
+        "images": [
+            "https://a0.muscache.com/im/pictures/miso/Hosting-1067148853227654724/original/baffb51b-46bd-4331-beaa-aa9e4992b9f5.jpeg"
+        ],
         "price_per_night": 120.0,
         "city_id": "city-4",
         "city_name": "Toronto",
@@ -79,14 +176,45 @@
         "max_guests": 4,
         "latitude": 43.6532,
         "longitude": -79.3832,
-        "amenities": ["WiFi", "Gym"],
-        "reviews": []
+        "amenities": [
+            "WiFi",
+            "Gym"
+        ],
+        "reviews": [
+            {
+                "user_name": "Michael Brown",
+                "title": "A Hidden Gem in the Countryside",
+                "rating": 4,
+                "comment": "The tranquility of this place was unmatched. Surrounded by nature, it was the perfect escape from the hustle and bustle of the city. The apartment was well-equipped and very comfortable, although I wish the Wi-Fi was a bit stronger. Overall, a lovely stay!",
+                "visit_date": "2024-05-10",
+                "service_rating": "5",
+                "cleanliness_rating": "4",
+                "comfort_rating": "5",
+                "price_rating": "4",
+                "place_id": "place-4"
+            },
+            {
+                "user_name": "Evelyn Mitchell",
+                "title": "Disappointing Stay",
+                "rating": 2,
+                "comment": "I was really looking forward to staying here, but unfortunately, the experience was disappointing. The house was not as clean as I expected, and the furniture was worn out. The photos were misleading, and I felt that the price was too high for what was offered.",
+                "visit_date": "2024-06-15",
+                "service_rating": "3",
+                "cleanliness_rating": "2",
+                "comfort_rating": "2",
+                "price_rating": "2",
+                "place_id": "place-4"
+            }
+        ]
     },
     {
         "id": "place-5",
         "host_id": "user-2",
         "host_name": "Jane Smith",
         "description": "A cozy mountain cabin.",
+        "images": [
+            "https://www.rightmove.co.uk/news/content/uploads/2018/05/Gotherington-1.jpg"
+        ],
         "price_per_night": 90.0,
         "city_id": "city-5",
         "city_name": "Vancouver",
@@ -97,12 +225,27 @@
         "max_guests": 6,
         "latitude": 49.2827,
         "longitude": -123.1207,
-        "amenities": ["WiFi", "Fireplace"],
+        "amenities": [
+            "WiFi",
+            "Fireplace"
+        ],
         "reviews": [
             {
                 "user_name": "Alice Johnson",
                 "rating": 5,
                 "comment": "Perfect for a getaway!"
+            },
+            {
+                "user_name": "Benjamin Turner",
+                "title": "Cozy and Comfortable Stay",
+                "rating": 4,
+                "comment": "The house was cozy and comfortable, with a warm atmosphere. The bed was soft, and the living room was great for relaxing. The kitchen could have been better equipped, but overall, it was a nice stay. I would recommend it for a short visit.",
+                "visit_date": "2024-05-12",
+                "service_rating": "4",
+                "cleanliness_rating": "4",
+                "comfort_rating": "4",
+                "price_rating": "4",
+                "place_id": "place-5"
             }
         ]
     },
@@ -111,6 +254,9 @@
         "host_id": "user-3",
         "host_name": "Alice Johnson",
         "description": "A modern loft in the heart of the city.",
+        "images": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/417837412.jpg?k=b928a6903945ef1e71b13ed2de648465b18835e727fc6ea03faf6ebfd64d6534&o=&hp=1"
+        ],
         "price_per_night": 110.0,
         "city_id": "city-1",
         "city_name": "New York",
@@ -120,13 +266,28 @@
         "number_of_bathrooms": 1,
         "max_guests": 2,
         "latitude": 40.7128,
-        "longitude": -74.0060,
-        "amenities": ["WiFi", "Gym"],
+        "longitude": -74.006,
+        "amenities": [
+            "WiFi",
+            "Gym"
+        ],
         "reviews": [
             {
                 "user_name": "John Doe",
                 "rating": 4,
                 "comment": "Very convenient location."
+            },
+            {
+                "user_name": "Sarah King",
+                "title": "Modern Luxury with a View",
+                "rating": 5,
+                "comment": "This apartment exceeded my expectations in every way. The modern design, the stunning view from the balcony, and the top-notch amenities made for an unforgettable stay. The hosts were incredibly hospitable, and the location was perfect for exploring the city.",
+                "visit_date": "2024-07-20",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "5",
+                "place_id": "place-6"
             }
         ]
     },
@@ -135,6 +296,9 @@
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A quaint bed and breakfast.",
+        "images": [
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/d5/d3/11/abbots-chambers.jpg?w=1200&h=-1&s=1"
+        ],
         "price_per_night": 70.0,
         "city_id": "city-2",
         "city_name": "Boston",
@@ -145,14 +309,33 @@
         "max_guests": 10,
         "latitude": 42.3601,
         "longitude": -71.0589,
-        "amenities": ["WiFi", "Breakfast"],
-        "reviews": []
+        "amenities": [
+            "WiFi",
+            "Breakfast"
+        ],
+        "reviews": [
+            {
+                "user_name": "David Johnson",
+                "title": "Charming and Comfortable",
+                "rating": 4,
+                "comment": "This apartment had a lot of charm and was very comfortable. The bed was soft, the kitchen was well-stocked, and the living area was perfect for relaxing after a day of sightseeing. The only downside was the slightly noisy street at night.",
+                "visit_date": "2024-06-30",
+                "service_rating": "4",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "4",
+                "place_id": "place-7"
+            }
+        ]
     },
     {
         "id": "place-8",
         "host_id": "user-2",
         "host_name": "Jane Smith",
         "description": "A luxurious villa with a private pool.",
+        "images": [
+            "https://www.santorinivillas.co.uk/wp-content/uploads/2019/09/ayama-villa-fira-santorini-evening.jpg"
+        ],
         "price_per_night": 300.0,
         "city_id": "city-3",
         "city_name": "Los Angeles",
@@ -163,14 +346,34 @@
         "max_guests": 12,
         "latitude": 34.0522,
         "longitude": -118.2437,
-        "amenities": ["WiFi", "Pool", "Gym"],
-        "reviews": []
+        "amenities": [
+            "WiFi",
+            "Pool",
+            "Gym"
+        ],
+        "reviews": [
+            {
+                "user_name": "Mason Clark",
+                "title": "Gorgeous Home, Amazing Stay",
+                "rating": 5,
+                "comment": "We had an amazing stay at this gorgeous home. It was spacious, clean, and incredibly comfortable. The hosts were very welcoming, and the location was perfect for exploring the area. The garden was a nice bonus for morning coffee. We would definitely return!",
+                "visit_date": "2024-06-28",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "4",
+                "place_id": "place-8"
+            }
+        ]
     },
     {
         "id": "place-9",
         "host_id": "user-3",
         "host_name": "Alice Johnson",
         "description": "A charming lakeside cottage.",
+        "images": [
+            "https://img.freepik.com/premium-photo/lakefront-with-charming-lakeside-cottage_1234738-113771.jpg"
+        ],
         "price_per_night": 85.0,
         "city_id": "city-4",
         "city_name": "Toronto",
@@ -181,12 +384,27 @@
         "max_guests": 6,
         "latitude": 43.6532,
         "longitude": -79.3832,
-        "amenities": ["WiFi", "Fireplace"],
+        "amenities": [
+            "WiFi",
+            "Fireplace"
+        ],
         "reviews": [
             {
                 "user_name": "Jane Smith",
                 "rating": 4,
                 "comment": "Beautiful view but the beds were a bit uncomfortable."
+            },
+            {
+                "user_name": "Mason Clark",
+                "title": "Gorgeous Home, Amazing Stay",
+                "rating": 5,
+                "comment": "We had an amazing stay at this gorgeous home. It was spacious, clean, and incredibly comfortable. The hosts were very welcoming, and the location was perfect for exploring the area. The garden was a nice bonus for morning coffee. We would definitely return!",
+                "visit_date": "2024-06-28",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "4",
+                "place_id": "place-9"
             }
         ]
     },
@@ -195,6 +413,9 @@
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A spacious country house.",
+        "images": [
+            "https://images.homify.com/v1483396600/p/photo/image/1755543/GBL-201fourth_1144.jpg"
+        ],
         "price_per_night": 130.0,
         "city_id": "city-5",
         "city_name": "Vancouver",
@@ -205,14 +426,34 @@
         "max_guests": 8,
         "latitude": 49.2827,
         "longitude": -123.1207,
-        "amenities": ["WiFi", "Fireplace", "Pool"],
-        "reviews": []
+        "amenities": [
+            "WiFi",
+            "Fireplace",
+            "Pool"
+        ],
+        "reviews": [
+            {
+                "user_name": "Noah Ramirez",
+                "title": "Perfect Getaway",
+                "rating": 5,
+                "comment": "This house was exactly what we needed for a peaceful getaway. The interior was beautifully decorated, and the outdoor space was perfect for relaxing. The beds were comfortable, and the kitchen had everything we needed. Highly recommend this place!",
+                "visit_date": "2024-07-08",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "5",
+                "place_id": "place-10"
+            }
+        ]
     },
     {
         "id": "place-11",
         "host_id": "user-2",
         "host_name": "Jane Smith",
         "description": "A chic downtown apartment.",
+        "images": [
+            "https://chic-boho-studio-in-downtownapartment.miami-metropolitan-area.com/data/Pictures/OriginalPhoto/14606/1460636/1460636263/picture-miami-1.JPEG"
+        ],
         "price_per_night": 150.0,
         "city_id": "city-1",
         "city_name": "New York",
@@ -222,13 +463,29 @@
         "number_of_bathrooms": 2,
         "max_guests": 4,
         "latitude": 40.7128,
-        "longitude": -74.0060,
-        "amenities": ["WiFi", "Gym", "Pool"],
+        "longitude": -74.006,
+        "amenities": [
+            "WiFi",
+            "Gym",
+            "Pool"
+        ],
         "reviews": [
             {
                 "user_name": "Alice Johnson",
                 "rating": 5,
                 "comment": "Amazing location and great amenities."
+            },
+            {
+                "user_name": "Jessica Taylor",
+                "title": "A Peaceful Oasis",
+                "rating": 5,
+                "comment": "This place is an absolute gem! It\u2019s so peaceful and the apartment is beautifully decorated. The bed was incredibly comfortable, and I slept like a baby every night. The hosts were also very friendly and accommodating. Highly recommended!",
+                "visit_date": "2024-07-05",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "5",
+                "place_id": "place-11"
             }
         ]
     },
@@ -237,6 +494,9 @@
         "host_id": "user-3",
         "host_name": "Alice Johnson",
         "description": "A cozy studio in the city center.",
+        "images": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/447458599.jpg?k=4424352415d8b988bf91203abd5ee1383c6659db0f293dd64241ee28d80e5ccd&o=&hp=1"
+        ],
         "price_per_night": 60.0,
         "city_id": "city-2",
         "city_name": "Boston",
@@ -247,14 +507,32 @@
         "max_guests": 2,
         "latitude": 42.3601,
         "longitude": -71.0589,
-        "amenities": ["WiFi"],
-        "reviews": []
+        "amenities": [
+            "WiFi"
+        ],
+        "reviews": [
+            {
+                "user_name": "Robert Green",
+                "title": "Elegant and Spacious Apartment",
+                "rating": 5,
+                "comment": "Staying in this apartment was a delight. It was spacious, elegantly decorated, and very comfortable. The large windows let in plenty of light, and the view was stunning. The location was also convenient, with many great restaurants nearby.",
+                "visit_date": "2024-07-18",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "4",
+                "place_id": "place-12"
+            }
+        ]
     },
     {
         "id": "place-13",
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A luxurious penthouse.",
+        "images": [
+            "https://imageio.forbes.com/blogs-images/keithflamer/files/2018/06/Screen-Shot-2018-06-08-at-11.51.56-PM-1200x536.png?format=png&height=600&width=1200&fit=bounds"
+        ],
         "price_per_night": 400.0,
         "city_id": "city-3",
         "city_name": "Los Angeles",
@@ -265,7 +543,11 @@
         "max_guests": 6,
         "latitude": 34.0522,
         "longitude": -118.2437,
-        "amenities": ["WiFi", "Pool", "Gym"],
+        "amenities": [
+            "WiFi",
+            "Pool",
+            "Gym"
+        ],
         "reviews": [
             {
                 "user_name": "Jane Smith",
@@ -284,6 +566,9 @@
         "host_id": "user-2",
         "host_name": "Jane Smith",
         "description": "A peaceful retreat in the woods.",
+        "images": [
+            "https://tinyhouseuniverse.com/wp-content/uploads/2024/05/Carolina-Storey-Treehouse-Model-Peaceful-Retreat-Home-12-1024x683.jpg"
+        ],
         "price_per_night": 90.0,
         "city_id": "city-4",
         "city_name": "Toronto",
@@ -294,14 +579,33 @@
         "max_guests": 4,
         "latitude": 43.6532,
         "longitude": -79.3832,
-        "amenities": ["WiFi", "Fireplace"],
-        "reviews": []
+        "amenities": [
+            "WiFi",
+            "Fireplace"
+        ],
+        "reviews": [
+            {
+                "user_name": "Ella Scott",
+                "title": "Charming but Needs Improvement",
+                "rating": 3,
+                "comment": "The house had a lot of charm and character, but it was not as comfortable as I had hoped. The bed was hard, and the bathroom could have been cleaner. The location was great, but overall, the stay was just okay.",
+                "visit_date": "2024-05-25",
+                "service_rating": "4",
+                "cleanliness_rating": "3",
+                "comfort_rating": "3",
+                "price_rating": "3",
+                "place_id": "place-14"
+            }
+        ]
     },
     {
         "id": "place-15",
         "host_id": "user-3",
         "host_name": "Alice Johnson",
         "description": "A charming townhouse.",
+        "images": [
+            "https://media.inmobalia.com/imgV1/B98Le8~d7M9k3DegigWkzHXQlgzMFGqGJJp6ZRUcpX033lqadFBp2i4GGW4X3JDm~11J_coE7XMgSyFWgioo4vCKf4wULEsOpqe6P8eWpAKVLIgV8DozBqoCBm72Ioa7RNJmTvYD7Yskm9tRNs1infEzk_Qjfi~y5_VkVHQYolt6LdPQ7XxbLfH_4msgJBeM5_P_UwlANcT3rI4PfPiUp_ebtGleWMenb1bqXUxbhz4-.jpg"
+        ],
         "price_per_night": 110.0,
         "city_id": "city-5",
         "city_name": "Vancouver",
@@ -312,12 +616,27 @@
         "max_guests": 6,
         "latitude": 49.2827,
         "longitude": -123.1207,
-        "amenities": ["WiFi", "Fireplace"],
+        "amenities": [
+            "WiFi",
+            "Fireplace"
+        ],
         "reviews": [
             {
                 "user_name": "John Doe",
                 "rating": 4,
                 "comment": "Very cozy and clean."
+            },
+            {
+                "user_name": "Jack Edwards",
+                "title": "Beautiful Home with Minor Issues",
+                "rating": 3,
+                "comment": "This house was beautiful and well-decorated, but there were a few issues. The heating system was not working properly, making it chilly during the night. Additionally, the kitchen appliances were a bit outdated. It\u2019s a nice place, but it could use some updates.",
+                "visit_date": "2024-06-20",
+                "service_rating": "4",
+                "cleanliness_rating": "4",
+                "comfort_rating": "3",
+                "price_rating": "3",
+                "place_id": "place-15"
             }
         ]
     },
@@ -326,6 +645,9 @@
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A beautiful mansion.",
+        "images": [
+            "https://robbreport.com/wp-content/uploads/2022/08/Aug_17_HOTW_Hudson_Valley_15.jpg?w=1000"
+        ],
         "price_per_night": 500.0,
         "city_id": "city-1",
         "city_name": "New York",
@@ -335,15 +657,36 @@
         "number_of_bathrooms": 5,
         "max_guests": 12,
         "latitude": 40.7128,
-        "longitude": -74.0060,
-        "amenities": ["WiFi", "Pool", "Gym", "Sauna"],
-        "reviews": []
+        "longitude": -74.006,
+        "amenities": [
+            "WiFi",
+            "Pool",
+            "Gym",
+            "Sauna"
+        ],
+        "reviews": [
+            {
+                "user_name": "Grace Wilson",
+                "title": "Disappointing Experience",
+                "rating": 2,
+                "comment": "The house looked beautiful in the photos, but the reality was quite different. The furniture was outdated, and the bed was uncomfortable. The worst part was the cleanliness; it felt like the place hadn't been thoroughly cleaned in a while. I wouldn\u2019t recommend staying here.",
+                "visit_date": "2024-07-16",
+                "service_rating": "3",
+                "cleanliness_rating": "2",
+                "comfort_rating": "2",
+                "price_rating": "2",
+                "place_id": "place-16"
+            }
+        ]
     },
     {
         "id": "place-17",
         "host_id": "user-2",
         "host_name": "Jane Smith",
         "description": "A small guest house.",
+        "images": [
+            "https://www.thespruce.com/thmb/DFP6Meq99nqREXLHNK7g1Lf3ryo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/WishboneConstruction-91a388a4bdc94156a501d745e76ef0f8.jpg"
+        ],
         "price_per_night": 50.0,
         "city_id": "city-2",
         "city_name": "Boston",
@@ -354,14 +697,32 @@
         "max_guests": 2,
         "latitude": 42.3601,
         "longitude": -71.0589,
-        "amenities": ["WiFi"],
-        "reviews": []
+        "amenities": [
+            "WiFi"
+        ],
+        "reviews": [
+            {
+                "user_name": "Ethan Young",
+                "title": "A Luxurious and Comfortable Stay",
+                "rating": 5,
+                "comment": "This house was pure luxury! It was spacious, beautifully decorated, and incredibly comfortable. The outdoor patio was a highlight, perfect for relaxing in the evenings. The hosts provided everything we needed for a perfect stay. I can\u2019t wait to return!",
+                "visit_date": "2024-05-30",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "5",
+                "place_id": "place-17"
+            }
+        ]
     },
     {
         "id": "place-18",
         "host_id": "user-3",
         "host_name": "Alice Johnson",
         "description": "A contemporary home.",
+        "images": [
+            "https://static.vecteezy.com/system/resources/previews/031/341/746/large_2x/beautiful-modern-house-exterior-with-carport-modern-residential-district-and-minimalist-building-concept-by-ai-generated-free-photo.jpg"
+        ],
         "price_per_night": 200.0,
         "city_id": "city-3",
         "city_name": "Los Angeles",
@@ -372,12 +733,28 @@
         "max_guests": 8,
         "latitude": 34.0522,
         "longitude": -118.2437,
-        "amenities": ["WiFi", "Pool", "Gym"],
+        "amenities": [
+            "WiFi",
+            "Pool",
+            "Gym"
+        ],
         "reviews": [
             {
                 "user_name": "John Doe",
                 "rating": 5,
                 "comment": "Absolutely fantastic place!"
+            },
+            {
+                "user_name": "Charlotte Brown",
+                "title": "A Perfect Blend of Comfort and Style",
+                "rating": 5,
+                "comment": "This house was the perfect blend of comfort and style. The spacious living room, cozy bedrooms, and well-equipped kitchen made our stay enjoyable. The house was spotless, and the hosts were attentive to our needs. I highly recommend this beautiful home!",
+                "visit_date": "2024-07-19",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "5",
+                "place_id": "place-18"
             }
         ]
     },
@@ -386,6 +763,9 @@
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A vintage house.",
+        "images": [
+            "https://media.istockphoto.com/id/182786914/photo/arts-and-crafts-bungelow-house-residential-exterior-facade-midwest-usa.jpg?s=612x612&w=0&k=20&c=9sr2BUCvb-sArGsqwnWgI20xeh4Sq3VxGowLstbmzDk="
+        ],
         "price_per_night": 85.0,
         "city_id": "city-4",
         "city_name": "Toronto",
@@ -396,14 +776,45 @@
         "max_guests": 4,
         "latitude": 43.6532,
         "longitude": -79.3832,
-        "amenities": ["WiFi", "Fireplace"],
-        "reviews": []
+        "amenities": [
+            "WiFi",
+            "Fireplace"
+        ],
+        "reviews": [
+            {
+                "user_name": "Henry Walker",
+                "title": "A Beautiful Home with Character",
+                "rating": 5,
+                "comment": "This home was full of character and charm. The decor was stunning, with a mix of modern and vintage touches. The bed was incredibly comfortable, and the entire house felt warm and inviting. The location was also ideal, close to everything we wanted to see.",
+                "visit_date": "2024-06-22",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "4",
+                "place_id": "place-19"
+            },
+            {
+                "user_name": "Abigail Lewis",
+                "title": "Lovely House in a Quiet Area",
+                "rating": 5,
+                "comment": "This house was lovely and located in a quiet, peaceful area. The interior was stylish and comfortable, making it a great place to unwind. The hosts were very accommodating, and the overall experience was fantastic. I would love to stay here again!",
+                "visit_date": "2024-07-05",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "4",
+                "place_id": "place-19"
+            }
+        ]
     },
     {
         "id": "place-20",
         "host_id": "user-2",
         "host_name": "Jane Smith",
         "description": "A rustic cabin.",
+        "images": [
+            "https://i.pinimg.com/736x/ba/72/5f/ba725f2901975068cad9b8cd778e8dbe.jpg"
+        ],
         "price_per_night": 75.0,
         "city_id": "city-5",
         "city_name": "Vancouver",
@@ -414,14 +825,33 @@
         "max_guests": 6,
         "latitude": 49.2827,
         "longitude": -123.1207,
-        "amenities": ["WiFi", "Fireplace"],
-        "reviews": []
+        "amenities": [
+            "WiFi",
+            "Fireplace"
+        ],
+        "reviews": [
+            {
+                "user_name": "Sophia Lee",
+                "title": "A Serene Retreat",
+                "rating": 5,
+                "comment": "This house was a serene retreat from the busy city life. The surrounding nature was breathtaking, and the house itself was stunning. It was spacious, comfortable, and beautifully furnished. I especially loved the outdoor seating area, perfect for morning coffee.",
+                "visit_date": "2024-07-07",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "5",
+                "place_id": "place-20"
+            }
+        ]
     },
     {
         "id": "place-21",
         "host_id": "user-3",
         "host_name": "Alice Johnson",
         "description": "A luxurious condo.",
+        "images": [
+            "https://hips.hearstapps.com/hmg-prod/images/over-the-top-apartments-main-1512422328.jpg"
+        ],
         "price_per_night": 220.0,
         "city_id": "city-1",
         "city_name": "New York",
@@ -431,8 +861,12 @@
         "number_of_bathrooms": 2,
         "max_guests": 6,
         "latitude": 40.7128,
-        "longitude": -74.0060,
-        "amenities": ["WiFi", "Gym", "Pool"],
+        "longitude": -74.006,
+        "amenities": [
+            "WiFi",
+            "Gym",
+            "Pool"
+        ],
         "reviews": [
             {
                 "user_name": "John Doe",
@@ -443,6 +877,30 @@
                 "user_name": "Jane Smith",
                 "rating": 4,
                 "comment": "Very nice but a bit expensive."
+            },
+            {
+                "user_name": "Robert Green",
+                "title": "Elegant and Spacious Apartment",
+                "rating": 5,
+                "comment": "Staying in this apartment was a delight. It was spacious, elegantly decorated, and very comfortable. The large windows let in plenty of light, and the view was stunning. The location was also convenient, with many great restaurants nearby.",
+                "visit_date": "2024-07-18",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "4",
+                "place_id": "place-21"
+            },
+            {
+                "user_name": "Jane Smith",
+                "title": "Stunning Views and Great Amenities",
+                "rating": 5,
+                "comment": "{\n    \"user_name\": \"Abigail Lewis\",\n    \"title\": \"Lovely House in a Quiet Area\",\n    \"rating\": 5,\n    \"comment\": \"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis house was lovely and located in a quiet, peaceful area. The interior was stylish and comfortable, making it a great place to unwind. The hosts were very accommodating, and the overall experience was fantastic. I would love to stay here again!",
+                "visit_date": "2024-04-15",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "5",
+                "place_id": "place-21"
             }
         ]
     },
@@ -451,6 +909,9 @@
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A charming villa.",
+        "images": [
+            "https://traveler.hr/storage/12754/Orvas-Villas_Villa_Makarac_Milna-(4)_3684.jpg"
+        ],
         "price_per_night": 180.0,
         "city_id": "city-2",
         "city_name": "Boston",
@@ -461,14 +922,45 @@
         "max_guests": 8,
         "latitude": 42.3601,
         "longitude": -71.0589,
-        "amenities": ["WiFi", "Pool"],
-        "reviews": []
+        "amenities": [
+            "WiFi",
+            "Pool"
+        ],
+        "reviews": [
+            {
+                "user_name": "Liam Clark",
+                "title": "Charming and Cozy Home",
+                "rating": 4,
+                "comment": "This charming home was everything I hoped for and more. The cozy living room was perfect for evenings in, and the bedrooms were comfortable and inviting. The only minor downside was that the Wi-Fi was a bit slow at times. Otherwise, a fantastic stay!",
+                "visit_date": "2024-07-14",
+                "service_rating": "4",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "4",
+                "place_id": "place-22"
+            },
+            {
+                "user_name": "William Perez",
+                "title": "Beautiful but Noisy",
+                "rating": 3,
+                "comment": "The house was beautifully decorated and very comfortable, but it was located near a busy street, which made it noisy at night. The noise made it difficult to sleep, which was unfortunate because everything else about the house was great.",
+                "visit_date": "2024-07-11",
+                "service_rating": "4",
+                "cleanliness_rating": "5",
+                "comfort_rating": "3",
+                "price_rating": "3",
+                "place_id": "place-22"
+            }
+        ]
     },
     {
         "id": "place-23",
         "host_id": "user-2",
         "host_name": "Jane Smith",
         "description": "A large family home.",
+        "images": [
+            "https://designbuildmodulars.com/content/uploads/2018/09/single-family4-1.jpg"
+        ],
         "price_per_night": 140.0,
         "city_id": "city-3",
         "city_name": "Los Angeles",
@@ -479,14 +971,45 @@
         "max_guests": 8,
         "latitude": 34.0522,
         "longitude": -118.2437,
-        "amenities": ["WiFi", "Pool"],
-        "reviews": []
+        "amenities": [
+            "WiFi",
+            "Pool"
+        ],
+        "reviews": [
+            {
+                "user_name": "Daniel White",
+                "title": "A Cozy and Luxurious Getaway",
+                "rating": 5,
+                "comment": "Staying in this house was an absolute delight. It\u2019s beautifully designed with luxurious finishes and all the comforts you could ask for. The garden was a peaceful retreat, and the spacious living areas made it easy to relax. A perfect escape!",
+                "visit_date": "2024-07-02",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "4",
+                "place_id": "place-23"
+            },
+            {
+                "user_name": "Olivia Roberts",
+                "title": "Elegance and Comfort Combined",
+                "rating": 5,
+                "comment": "This house was the epitome of elegance and comfort. Every room was beautifully decorated, and the beds were incredibly comfortable. The kitchen was fully equipped, making it easy to cook meals. The hosts were also wonderful and made sure we had everything we needed.",
+                "visit_date": "2024-05-18",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "4",
+                "place_id": "place-23"
+            }
+        ]
     },
     {
         "id": "place-24",
         "host_id": "user-3",
         "host_name": "Alice Johnson",
         "description": "A small studio apartment.",
+        "images": [
+            "https://www.decorilla.com/online-decorating/wp-content/uploads/2019/04/small-studio-apartment-layout.jpg"
+        ],
         "price_per_night": 65.0,
         "city_id": "city-4",
         "city_name": "Toronto",
@@ -497,14 +1020,44 @@
         "max_guests": 2,
         "latitude": 43.6532,
         "longitude": -79.3832,
-        "amenities": ["WiFi"],
-        "reviews": []
+        "amenities": [
+            "WiFi"
+        ],
+        "reviews": [
+            {
+                "user_name": "Olivia Martinez",
+                "title": "Perfect Home Away from Home",
+                "rating": 5,
+                "comment": "This apartment felt like home the moment I walked in. It was cozy, well-furnished, and had everything I needed for a comfortable stay. The neighborhood was quiet and safe, and the hosts were very welcoming. I would definitely stay here again!",
+                "visit_date": "2024-05-22",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "5",
+                "place_id": "place-24"
+            },
+            {
+                "user_name": "James Smith",
+                "title": "Stylish and Convenient",
+                "rating": 4,
+                "comment": "The apartment was stylishly decorated and very convenient for exploring the city. The bed was comfortable, and the kitchen had everything I needed. The only minor issue was that the shower water pressure could have been stronger.",
+                "visit_date": "2024-07-09",
+                "service_rating": "4",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "4",
+                "place_id": "place-24"
+            }
+        ]
     },
     {
         "id": "place-25",
         "host_id": "user-1",
         "host_name": "John Doe",
         "description": "A grand estate.",
+        "images": [
+            "https://ralphmaglieri.com/wp-content/uploads/2017/03/001.jpg"
+        ],
         "price_per_night": 350.0,
         "city_id": "city-5",
         "city_name": "Vancouver",
@@ -515,12 +1068,28 @@
         "max_guests": 10,
         "latitude": 49.2827,
         "longitude": -123.1207,
-        "amenities": ["WiFi", "Pool", "Gym"],
+        "amenities": [
+            "WiFi",
+            "Pool",
+            "Gym"
+        ],
         "reviews": [
             {
                 "user_name": "Jane Smith",
                 "rating": 5,
                 "comment": "Absolutely stunning!"
+            },
+            {
+                "user_name": "Alice Thompson",
+                "title": "A Dreamy Cottage in the Hills",
+                "rating": 5,
+                "comment": "This house is a true gem! Nestled in the hills, it offers stunning views and a serene atmosphere. The interior is beautifully decorated, with comfortable furniture and thoughtful touches everywhere. I felt at home the moment I arrived, and I can't wait to come back!",
+                "visit_date": "2024-06-12",
+                "service_rating": "5",
+                "cleanliness_rating": "5",
+                "comfort_rating": "5",
+                "price_rating": "5",
+                "place_id": "place-25"
             }
         ]
     }
