@@ -2,11 +2,17 @@ document.addEventListener('DOMContentLoaded', checkAuthentication);
 function checkAuthentication() {
     const token = getCookie('token');
     const loginLink = document.getElementById('login-link');
+    const countryFilter = document.getElementById('filter');
+    const placeList = document.getElementById('places-list');
 
-    if (token) {
+    if (!token) {
         loginLink.style.display = 'block';
+        countryFilter.style.display = 'none';
+        placeList.style.display = 'none';
     } else {
         loginLink.style.display = 'none';
+        countryFilter.style.display = 'block';
+        placeList.style.display = 'block';
         fetchPlaces(token);
     }
 }
@@ -16,7 +22,6 @@ function getCookie(name) {
     if (parts.length === 2) return parts.pop().split(';').shift();
     return null;
 }
-
 
 async function fetchPlaces(token) {
     try {
@@ -43,9 +48,12 @@ function displayPlaces(places) {
     placesList.innerHTML = '';
 
     places.forEach(place => {
-        const placeElement = document.createElement('div');
-        placeElement.className = 'place-item';
+        const placeElement = document.createElement('section');
+        placeElement.className = 'details-place';
         placeElement.innerHTML = `
+            <br>
+            <img src="${place.images[0]}" alt="Place Image" class="place-image">
+            <br>
             <h3>${place.id}</h3>
             <p>${place.description}</p>
             <p><strong>Location:</strong> ${place.city_name}, ${place.country_name}</p>

@@ -3,8 +3,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+    height: 100%;
     background-color: white;
+    position: relative;
+    text-align: center;
+    position: relative;
 }
 
 /* Header */
@@ -47,7 +50,6 @@ header {
     animation: myAnimation 1s ease-in-out;
 }
 
-
 /* Navigation */
 nav {
     display: flex;
@@ -78,81 +80,13 @@ nav {
     transform: scale(1.1);
 }
 
+
 /* Main */
 main {
+    flex: 1;
     padding: 50px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
-
-
-.place-item {
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-
-
-.place-card {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-}
-
-.place-details {
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    gap: 20px;
-    align-items: flex-start;
     justify-content: center;
-    border-radius: 15px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    color: #4c4c4d;
-    font-size: 20px;
-    text-align: center;
-}
-
-.place-image-large {
-    width: 150%;
-    max-width: 500px;
-    height: 450px;
-    box-shadow: 0px 4px 6px #343535;
-    border-radius: 15px;
-}
-
-.place-info {
-    flex: 1;
-    background-color: rgba(228, 222, 222, 0.911);
-    padding: 10px;
-    text-align: left;
-    box-shadow: 0px 4px 6px #343535;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.place-info h1 {
-    font-weight: bold;
-    margin-bottom: 45px;
-    color: #4c4c4d;
-    text-align: center;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-}
-
-.place-info ul {
-    list-style: none;
-    padding: 0;
-    color: #353535;
 }
 
 .reviews-container {
@@ -162,7 +96,7 @@ main {
     flex-direction: column;
     gap: 30px;
     margin-top: 30px;
-    color: #4c4c4d;
+    color: white;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
@@ -174,7 +108,7 @@ main {
     text-align: center;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
     font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .reviews {
@@ -182,46 +116,101 @@ main {
     padding: 20px;
 }
 
-.review-card {
+#review-form {
+    gap: 30px;
+    margin-top: 30px;
+    text-align: Left;
+    align-items: flex-start;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#review-form label {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #4c4c4d;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    align-items: left;
+    text-align: left;
+    border-radius: 15px;
+    font-size: 25px;
+    text-decoration: none;
+    border: none;
+}
+   
+#review-form input,
+#review-form textarea {
     background-color: rgba(228, 222, 222, 0.911);
-    padding: 20px;
+    padding: 25px;
     border-radius: 15px;
     box-shadow: 0px 4px 6px #343535;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: #4c4c4d;
+    margin-bottom: 35px;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    margin-top: 0.7px;
 }
 
-.rating-img {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
-    color: gold;
-    font-family: 'Montserrat', sans-serif;
+.review-rating,
+.review-text {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto; 
+    font-size: 25px;
+    text-decoration: none;
 }
 
-.button_add_review {
+.star-rating {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto; 
+}
+
+.star-rating a {
+    color: #e91e63; /* gris (normal) */
+    font-size: 70px;
+    text-decoration: none;
+}
+
+.star-rating:hover a:hover ~ a {
+    color: #e91e63; /* gris (normal) */
+}
+
+.star-rating:hover a {
+    color: #f39c12;
+}
+
+.star-rating .selected {
+    color: orange;
+}
+
+.reviews button {
     background-color: #e91e63;
     box-shadow: 0px 4px 6px #e91e62c5;
     color: white;
     padding: 15px 32px;
     border-radius: 10px;
     text-decoration: none;
-    display: inline-block;
-    margin: 0 auto;
-    margin-top: 30px;
-    font-weight: bold;
-    margin-bottom: 45px;
-    text-shadow: 0px 2px 2px #2a2b2b;
+    font-weight: bold;    
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     position: center;
     cursor: pointer;
+    border: none;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto; 
 }
 
-.button_add_review:hover {
+.reviews button:hover {
     animation: myAnimation 1s ease-in-out;
 }
 

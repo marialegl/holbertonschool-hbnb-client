@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 .vscode/
+eslint.config.js
+server.js
 # C extensions
 *.so
 .gitignore

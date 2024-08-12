@@ -5,7 +5,7 @@ body {
     padding: 0;
     text-align: center;
     position: relative;
-    background-color: white; /* Color de fondo suave */
+    background-color: #ffffff; /* Color de fondo suave */
 }
 
 /* Header */
@@ -29,11 +29,22 @@ header {
     }
 }
 
+@keyframes myAnimation2 {
+    from {
+      background-color: rgb(238, 199, 211);
+      transform: scale(1);
+    }
+    to {
+      background-color: rgb(245, 126, 171);
+      transform: scale(1.03);
+    }
+}
+
 .logo {
     height: 65px;
 }
 
-.login-button {
+.go_out-button {
     text-decoration: none;
     color: white;
     box-shadow: 0px 4px 6px #e91e62c5;
@@ -44,7 +55,7 @@ header {
     background-color: #e91e63;
 }
 
-.login-button:hover {
+.go_out-button:hover {
     animation: myAnimation 1s ease-in-out;
 }
 
@@ -83,14 +94,14 @@ main {
     padding: 50px;
 }
 
-.title-future-trips {
+h1 {
     font-weight: bold;
     margin-bottom: 45px;
     color: #4c4c4d;
     text-align: center;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 #filter {
@@ -107,13 +118,23 @@ main {
     border-radius: 15px;
 }
 
+#places-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual ancho */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px;
+}
+
 .details-place {
     background-color: #eee8e8d7;
     padding: 20px;
-    width: calc(33.33% - 20px); /* Ajusta el ancho para que quepan 3 en una fila */
-    flex-wrap: nowrap; /* Ajusta el ancho según el número de columnas */
+    overflow: hidden;
     box-shadow: 0px 4px 6px #343535;
     border-radius: 15px;
+}
+
+.details-place:hover {
+    animation: myAnimation2 1s ease-in-out;
 }
 
 .place-image {
@@ -123,51 +144,20 @@ main {
     box-shadow: 0px 4px 6px #343535;
 }
 
-.button {
-    background-color: #e91e63;
-    box-shadow: 0px 4px 6px #e91e62c5;
-    color: white;
-    padding: 15px 32px;
-    border-radius: 10px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 auto;
-    margin-top: 30px;
+.button-card-places {
     font-weight: bold;
     margin-bottom: 45px;
-    text-shadow: 0px 2px 2px #2a2b2b;
+    color: #e91e63;
+    text-align: center;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    position: center;
-    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
 }
 
-.button:hover {
+.button-.button-card-places {
     animation: myAnimation 1s ease-in-out;
 }
-
-.button_reserve {
-    background-color: #e91e63;
-    box-shadow: 0px 4px 6px #343535;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.button_reserve:hover {
-    background: linear-gradient(to left, rgb(255, 39, 103), rgb(187, 14, 80));
-    transform: scale(1.1);
-  }
 
 /* Footer */
 footer {

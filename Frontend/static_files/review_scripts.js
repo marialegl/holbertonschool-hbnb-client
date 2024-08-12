@@ -1,6 +1,7 @@
 function checkAuthentication() {
     const token = getCookie('token');
     if (!token) {
+        alert('User not authenticated. Please log in first.');
         window.location.href = 'index.html';
     }
     return token;
@@ -18,12 +19,15 @@ function getPlaceIdFromURL() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const reviewForm = document.getElementById('review-form');
-    const token = checkAuthentication();
-    const placeId = getPlaceIdFromURL();
+    const token = checkAuthentication();  // Obtener el token JWT
+    const placeId = getPlaceIdFromURL();  // Obtener el placeId de la URL
+
+    document.getElementById('placeId').value = placeId;  // Establecer el placeId en el formulario
 
     if (reviewForm) {
         reviewForm.addEventListener('submit', async (event) => {
             event.preventDefault();
+
             const reviewTitle = document.getElementById('review-title').value;
             const reviewText = document.getElementById('review-text').value;
             const reviewRating = document.querySelectorAll('#review-rating .selected').length;
@@ -32,15 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const cleanlinessRating = document.getElementById('cleanliness-rating').value;
             const comfortRating = document.getElementById('comfort-rating').value;
             const priceRating = document.getElementById('price-rating').value;
+
             const reviewData = {
-                reviewTitle,
-                reviewText,
-                reviewRating,
-                visitDate,
-                serviceRating,
-                cleanlinessRating,
-                comfortRating,
-                priceRating,
+                title: reviewTitle,
+                comment: reviewText,
+                rating: reviewRating,
+                visit_date: visitDate,
+                service_rating: serviceRating,
+                cleanliness_rating: cleanlinessRating,
+                comfort_rating: comfortRating,
+                price_rating: priceRating,
             };
 
             await submitReview(token, placeId, reviewData);
@@ -64,13 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function submitReview(token, placeId, reviewData) {
     try {
-        const response = await fetch('https://127.0.0.1:5000/places/${placeId}/reviews', {
+        const response = await fetch(`http://127.0.0.1:5000/places/${placeId}/reviews`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`
             },
-            body: JSON.stringify({ reviewData })
+            body: JSON.stringify(reviewData)
         });
 
         handleResponse(response);
