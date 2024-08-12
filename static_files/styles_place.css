@@ -161,6 +161,7 @@ h2 {
     display: flex;
     margin-top: 50px;
     justify-content: center;
+    padding: 30px;
 }
 
 .review-card p:first-child { /* Selecciona el primer párrafo (user_name) */
