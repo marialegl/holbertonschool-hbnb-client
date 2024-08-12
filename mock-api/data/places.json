@@ -595,6 +595,18 @@
                 "comfort_rating": "3",
                 "price_rating": "3",
                 "place_id": "place-14"
+            },
+            {
+                "user_name": "Jane Smith",
+                "title": "Comfortable Stay",
+                "rating": 4,
+                "comment": "The house was cozy and comfortable, with a warm atmosphere. The bed was soft, and the living room was great for relaxing. The kitchen could have been better equipped, but overall, it was a nice stay. I would recommend it for a short visit.",
+                "visit_date": "2024-01-25",
+                "service_rating": "4",
+                "cleanliness_rating": "4",
+                "comfort_rating": "4",
+                "price_rating": "4",
+                "place_id": "place-14"
             }
         ]
     },
